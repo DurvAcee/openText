@@ -77,10 +77,11 @@ export default function TextForm(props) {
 
     return (
         <>
-        <div className="container" style={{marginTop: `5rem`}}>
+        <div className="container" style={{color: props.mode==='dark'?'white':'#042743', marginTop: `5rem`}}>
             <h2>{props.heading}</h2>
             <div className="mb-3">
-                <textarea className="form-control" id="myTextBox" value={text} onChange={handleOnChange} rows="8"></textarea>
+                <textarea className="form-control" id="myTextBox" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'grey':'white',
+            color: props.mode==='dark'?'white':'#042743'}} rows="8"></textarea>
             </div>
             <button className="btn btn-dark mx-1" onClick={handleTextToSpeech}>Text to Speech (Experimental)</button>
             <button className="btn btn-primary mx-1" onClick={handleUpperCase}>Convert to Upper Case</button>
@@ -90,7 +91,7 @@ export default function TextForm(props) {
             <button className="btn btn-danger mx-1" onClick={handleClearText}>Clear Text</button>
         </div>
 
-        <div className="container my-3">
+        <div className="container my-3" style={{color: props.mode==='dark'?'white':'#042743'}}>
                 <h2 style={{marginTop: `2rem`}}> Summary of your Text </h2>
                 <div className="textSummary" style={{marginTop: `1rem`}}>
                     <p> Number of Words : {text.split(" ").length}</p>
