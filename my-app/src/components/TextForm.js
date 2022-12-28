@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 export default function TextForm(props) {
+
+    const mySwal = withReactContent(Swal);
     const [text, setText] = useState('');
 
     const handleUpperCase = () =>{
@@ -23,16 +27,34 @@ export default function TextForm(props) {
 
     const emptyTextFound = () => {
         if(!text){
-            alert('Please Enter some Text');
+            mySwal.fire({
+                icon: 'error',
+                title: 'Oopss...',
+                text: 'Please Enter some Text'
+            });
         }
 }
 
     const handleCopyClipboard = () => {
         navigator.clipboard.writeText(text).then(function(){
-            let result = text ? 'text copied to clipboard!' : 'Please Enter some Text!';
-            alert(result);
+            let result = text ? 'text copied to clipboard!' : 'Cannot copy Empty Text!';
+            let iconText = text ? 'success' : 'error';
+
+            mySwal.fire({
+                icon: iconText,
+                title: result,
+                timer: 1500,
+                timerProgressBar: true,
+                showCancelButton: false,
+                showConfirmButton: false
+            });
+
         }, function(err){
-            alert('Failed: Could not copy text: ',err);
+            let errorText = 'Failed to copy Text: ' + err;
+           mySwal.fire({
+                icon : 'warning',
+                title: errorText
+           });
         });
     }
   
@@ -53,8 +75,6 @@ export default function TextForm(props) {
             <h2> Your Text Summary</h2>
             <p> {text.split(" ").length} Words, {text.length} Characters</p>
             <p> {0.008 * text.split(" ").length} Minutes to Read</p>
-            <h2>Preview</h2>
-            <p>{text}</p>
         </div>
         </>
     )
