@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
@@ -22,6 +23,7 @@ export default function TextForm(props) {
     }
 
     const handleClearText = () => {
+        emptyTextFound();
         setText("");
     }
 
@@ -33,7 +35,7 @@ export default function TextForm(props) {
                 text: 'Please Enter some Text'
             });
         }
-}
+    }
 
     const handleCopyClipboard = () => {
         navigator.clipboard.writeText(text).then(function(){
@@ -43,7 +45,7 @@ export default function TextForm(props) {
             mySwal.fire({
                 icon: iconText,
                 title: result,
-                timer: 1500,
+                timer: 1200,
                 timerProgressBar: true,
                 showCancelButton: false,
                 showConfirmButton: false
@@ -57,6 +59,21 @@ export default function TextForm(props) {
            });
         });
     }
+
+    const handleWhiteSpaces = () => {
+        emptyTextFound();
+        setText(text.trim());
+    }
+
+    const handleTextToSpeech = () => {
+        emptyTextFound();
+        if(text){
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.pitch = 1;
+
+            window.speechSynthesis.speak(utterance);
+        }
+    }
   
     return (
         <>
@@ -65,16 +82,19 @@ export default function TextForm(props) {
             <div class="mb-3">
                 <textarea className="form-control" id="myTextBox" value={text} onChange={handleOnChange} rows="8"></textarea>
             </div>
+            <button className="btn btn-dark mx-1" onClick={handleTextToSpeech}>Text to Speech (Experimental)</button>
             <button className="btn btn-primary mx-1" onClick={handleUpperCase}>Convert to Upper Case</button>
             <button className="btn btn-primary mx-1" onClick={handleLowerCase}>Convert to Lower Case</button>
-            <button className="btn btn-danger mx-1" onClick={handleClearText}>Clear Text</button>
             <button className="btn btn-success mx-1" onClick={handleCopyClipboard}>Copy to Clipboard</button>
+            <button className="btn btn-secondary mx-1" onClick={handleWhiteSpaces}>Remove White Spaces</button>
+            <button className="btn btn-danger mx-1" onClick={handleClearText}>Clear Text</button>
         </div>
 
         <div className="container my-3">
-            <h2> Your Text Summary</h2>
-            <p> {text.split(" ").length} Words, {text.length} Characters</p>
-            <p> {0.008 * text.split(" ").length} Minutes to Read</p>
+                <h2> Summary of your Text </h2>
+                <p> Number of Words : {text.split(" ").length}</p>
+                <p> Number of Characters : {text.length} Characters</p>
+                <p> Reading Time : {0.008 * text.split(" ").length} seconds.</p>
         </div>
         </>
     )
