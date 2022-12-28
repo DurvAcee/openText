@@ -74,12 +74,12 @@ export default function TextForm(props) {
             window.speechSynthesis.speak(utterance);
         }
     }
-  
+
     return (
         <>
-        <div className="container">
+        <div className="container" style={{marginTop: `5rem`}}>
             <h2>{props.heading}</h2>
-            <div class="mb-3">
+            <div className="mb-3">
                 <textarea className="form-control" id="myTextBox" value={text} onChange={handleOnChange} rows="8"></textarea>
             </div>
             <button className="btn btn-dark mx-1" onClick={handleTextToSpeech}>Text to Speech (Experimental)</button>
@@ -91,10 +91,12 @@ export default function TextForm(props) {
         </div>
 
         <div className="container my-3">
-                <h2> Summary of your Text </h2>
-                <p> Number of Words : {text.split(" ").length}</p>
-                <p> Number of Characters : {text.length} Characters</p>
-                <p> Reading Time : {0.008 * text.split(" ").length} seconds.</p>
+                <h2 style={{marginTop: `2rem`}}> Summary of your Text </h2>
+                <div className="textSummary" style={{marginTop: `1rem`}}>
+                    <p> Number of Words : {text.split(" ").length}</p>
+                    <p> Number of Characters : {text.length} Characters</p>
+                    <p> Reading Time : {0.008 * text.split(" ").length} seconds.</p>
+                </div>
         </div>
         </>
     )
