@@ -7,24 +7,24 @@
 ![Project Screenshot](https://i.ibb.co/gPmC9Ds/Microsoft-Teams-image-5.png)
  
   <h3>
-    <a href="https://durvacee.github.io/ReactJS_openText" title="Show Repositories"> &nbsp;🌐&nbsp;View Live Hosted Site</a>
+    <a href="https://durvacee.github.io/ReactJS_openText" title="Show Repositories"> &nbsp;🌐&nbsp;View Live Hosted Websie</a>
   </h3>
 
-This is a Simple but Efficient Text Utility Web Application which is built in ReactJS
+This is a very Simple but Efficient Text Utility Web Application which is built in ReactJS
 
 Features :
 * You can convert your Text to Speech & Let it read everything out for you! 
 * You can perform Text Operations Like :- Converting your text to Uppercase / Lowercase.
 * You can Remove Unwanted White spaces from the Text.
 * Lastly, You can copy the Modified Text Directly to your Clipboard and paste it wherever you want!
+* There's also a feature to Enable / Disable Dark Mode.
+
 
 </div>
   
 <div>
 
-  ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"> &nbsp;Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+  ## &nbsp;<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"> &nbsp;Built With
 
 * [![React][React.js]][React-url]
 * [![HTML5][HTML5.com]][HTML5-url]
