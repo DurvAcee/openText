@@ -2,8 +2,9 @@
 🔴🟡🟢
 [Click to View Live Hosted Project!](https://durvacee.github.io/ReactJS_openText)
 
-## About The Project
-
+<div>
+  
+  ## 💻 &nbsp;About The Project
 ![Project Screenshot](https://i.ibb.co/gPmC9Ds/Microsoft-Teams-image-5.png)
 
 
@@ -15,6 +16,8 @@ Features :
 * You can Remove Unwanted White spaces from the Text.
 * Lastly, You can copy the Modified Text Directly to your Clipboard and paste it wherever you want!
 
+</div>
+  
 <div>
 
   ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"> &nbsp;Built With
