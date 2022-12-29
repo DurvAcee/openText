@@ -1,11 +1,12 @@
-<div>
+
 🔴🟡🟢
  
 
   <h4 align="center">
-    <a href="https://durvacee.github.io/ReactJS_openTex" title="Show Repositories">View Live Hosted Site 🌐</a>
+    <a href="https://durvacee.github.io/ReactJS_openText" title="Show Repositories">View Live Hosted Site 🌐</a>
   </h4>
-  
+
+<div>
 <div>
   
   ## 💻 &nbsp;About The Project
