@@ -2,7 +2,8 @@
 
 ## About The Project
 
-[![Screenshot][https://i.ibb.co/n7xrw57/open-Text-Homepage.jpg]](https://durvacee.github.io/ReactJS_openText)
+![Project Screenshot](https://i.ibb.co/n7xrw57/open-Text-Homepage.jpg)
+
 
 This is a Simple but Efficient Text Utility Web Application which is built in ReactJS
 
