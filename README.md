@@ -1,1 +1,1 @@
-[a link](https://durvacee.github.io/ReactJS_openText)
+[View Live Hosted Project ->](https://durvacee.github.io/ReactJS_openText)
