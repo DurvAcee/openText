@@ -6,9 +6,9 @@
   ## 💻 &nbsp;About The Project
 ![Project Screenshot](https://i.ibb.co/gPmC9Ds/Microsoft-Teams-image-5.png)
  
-  <h4>
+  <h3>
     <a href="https://durvacee.github.io/ReactJS_openText" title="Show Repositories"> &nbsp;🌐&nbsp;View Live Hosted Site</a>
-  </h4>
+  </h3>
 
 This is a Simple but Efficient Text Utility Web Application which is built in ReactJS
 
