@@ -2,7 +2,7 @@
 
 ## About The Project
 
-![Project Screenshot](https://i.ibb.co/n7xrw57/open-Text-Homepage.jpg)
+![Project Screenshot](https://i.ibb.co/gPmC9Ds/Microsoft-Teams-image-5.png)
 
 
 This is a Simple but Efficient Text Utility Web Application which is built in ReactJS
