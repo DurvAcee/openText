@@ -4,7 +4,12 @@
 <div>
   
   ## 💻 &nbsp;About The Project
-![Project Screenshot](https://i.ibb.co/gPmC9Ds/Microsoft-Teams-image-5.png)
+ <b>Light Mode : </b><br/>
+![Project Screenshot - Light Mode](https://i.ibb.co/M53CvZD/Screenshot-2022-12-30-155918.jpg)
+
+  <b>Dark Mode : </b><br/>
+![Project Screenshot - Dark Mode](https://i.ibb.co/2yK4ypv/darkMode.jpg)
+
  
   <h3>
     <a href="https://durvacee.github.io/ReactJS_openText" title="Show Repositories"> &nbsp;🌐&nbsp;View Live Hosted Websie</a>
