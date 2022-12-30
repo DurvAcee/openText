@@ -79,7 +79,7 @@ export default function TextForm(props) {
         <div className="container" style={{color: props.mode==='dark'?'white':'#042743', marginTop: `5rem`}}>
             <h2>{props.heading}</h2>
             <div className="mb-3">
-                <textarea className="form-control" id="myTextBox" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'grey':'white',
+                <textarea className="form-control" id="myTextBox" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#13466e':'white',
             color: props.mode==='dark'?'white':'#042743'}} rows="8"></textarea>
             </div>
             <button className="btn btn-dark my-2 mx-1" onClick={handleTextToSpeech}>Text to Speech (Experimental)</button>
@@ -95,7 +95,7 @@ export default function TextForm(props) {
                 <div className="textSummary" style={{marginTop: `1rem`}}>
                     <p> Number of Words : {!text? 0 : text.trim().split(" ").length} Words.</p>
                     <p> Number of Characters : {text.length} Characters.</p>
-                    <p> Reading Time : {0.008 * text.split(" ").length} seconds.</p>
+                    <p> Reading Time : {!text? 0 : 0.008 * text.split(" ").length} seconds.</p>
                 </div>
         </div>
         </>
