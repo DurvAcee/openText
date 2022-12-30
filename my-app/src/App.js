@@ -33,7 +33,6 @@ function App() {
           <Route exact path="/" element={<TextForm heading="Enter The Text :" mode={mode}/>} />
           <Route exact path="/about" element={<About mode={mode}/>} />
       </Routes>
-      {/* <TextForm heading="Enter The Text :" mode={mode}/> */}
       </div>
     </Router>
     </>
