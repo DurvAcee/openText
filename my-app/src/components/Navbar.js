@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 export default function Navbar(props) {
   return (
@@ -20,11 +21,17 @@ export default function Navbar(props) {
                         </li>
 
                     </ul>
-     
-                    <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+                    <span style={{color: props.mode==='dark'?'white':'black'}}> Switch to {`${props.mode==='light'?'Dark':'Light'}`} Mode &nbsp;</span>
+                    <div class = 'toggle-switch mx-1 my-2'>
+                        <label> 
+                            <input type = 'checkbox' onClick = {props.toggleMode} />
+                            <span class = 'slider'></span>
+                        </label>
+                    </div>
+                    {/* <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
                         <input className="form-check-input" type="checkbox" onClick = {props.toggleMode} role="switch" id="flexSwitchCheckDefault"/>
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
         </nav>
