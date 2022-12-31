@@ -12,7 +12,7 @@
 
  
   <h3>
-    <a href="https://durvacee.github.io/ReactJS_openText" title="Show Repositories"> &nbsp;🌐&nbsp;View Live Hosted Websie</a>
+    <a href="https://open-text.vercel.app/" title="Show Repositories"> &nbsp;🌐&nbsp;View Live Hosted Websie</a>
   </h3>
 
 This is a very Simple but Efficient Text Utility Web Application which is built in ReactJS
