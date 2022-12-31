@@ -22,12 +22,12 @@ export default function Navbar(props) {
 
                     </ul>
                     <span style={{color: props.mode==='dark'?'white':'black'}}> Switch to {`${props.mode==='light'?'Dark':'Light'}`} Mode &nbsp;</span>
-                        <div class = 'toggle-switch mx-1 my-2'>
+                        <span className = 'toggle-switch mx-1 my-2'>
                             <label> 
                                 <input type = 'checkbox' onClick = {props.toggleMode} />
-                                <span class = 'slider'></span>
+                                <span className = 'slider'></span>
                             </label>
-                        </div>
+                        </span>
                     </div>
                 </div>
         </nav>
